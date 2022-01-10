@@ -11,40 +11,232 @@
     <link href="style.css" rel="stylesheet">
     <script src="javascript.js"></script>
     <title>Cookbook</title>
+    <ul class="nav flex-column">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Chicken</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#recipe1">Recipe 1</a></li>
+                <li><a class="dropdown-item" href="#recipe3">Recipe 3</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Beef</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#recipe2">Recipe 2</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pork</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#recipe4">Recipe 4</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Vegan</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#recipe5">Recipe 5</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fish</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#recipe2">Recipe 2</a></li>
+            </ul>
+        </li>
+      </ul>
+
 </head>
 <body>
-    <div class="card" style="width: 60%;">
-        
-        <div class="card-body">
-            <h5 class="card-title">Recipe 1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                
-            </p>
-            <img src="https://via.placeholder.com/150" class="card-text" alt="Image Recipe 1">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Ingredient</th>
-                    <th scope="col">Measurement</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                  </tr>
-                  <tr>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                  </tr>
-                  <tr>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            
-        </div>
-    </div>
+    <h1 id="title">My Cookbook</h1><br>
+    <hr>
+    <ul class="list-group list-group-flush" id="recipe-list">
+        <li class="list-group-item">
+            <div class="recipe" id="recipe1">
+                <div class="card" style="width: 60%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe 1</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.    
+                        </p>
+                        <div class="card-img">
+                            <img src="https://via.placeholder.com/150" class="card-text" alt="Image Recipe 1">
+                            <div class="overlay">
+                                <div class="text">Recipe 1</div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Measurement</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <td>Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item"> <div class="recipe" id="recipe2">
+            <div class="card" style="width: 60%;">
+                <div class="card-body">
+                    <h5 class="card-title">Recipe 2</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's content.    
+                    </p>
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/150" class="card-text" alt="Image Recipe 2">
+                    </div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Ingredient</th>
+                            <th scope="col">Measurement</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                        <tr>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table> 
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="recipe" id="recipe3">
+                <div class="card" style="width: 60%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe 3</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.    
+                        </p>
+                        <div class="card-img">
+                            <img src="https://via.placeholder.com/150" class="card-text" alt="Image Recipe 3">
+                        </div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Measurement</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <td>Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="recipe" id="recipe4">
+                <div class="card" style="width: 60%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe 4</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.    
+                        </p>
+                        <div class="card-img">
+                            <img src="https://via.placeholder.com/150" class="card-text" alt="Image Recipe 4">
+                        </div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Measurement</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <td>Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="recipe" id="recipe5">
+                <div class="card" style="width: 60%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe 5</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.    
+                        </p>
+                        <div class="card-img">
+                            <img src="https://via.placeholder.com/150" class="card-text" alt="Image Recipe 5">
+                        </div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Ingredient</th>
+                                <th scope="col">Measurement</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <td>Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+   
 </body>
 </html>
