@@ -3,11 +3,14 @@
     justify-content: center;
     align-items: center;
 }
+.card-title {
+  background-color: chartreuse;
+}
 .card-img{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 .nav{
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -18,37 +21,95 @@
     left: 0;
     background-color: rgb(157, 190, 223);
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    padding-top: 200px;
     
 }
 #title{
     margin-left: 200px;
 }
-.overlay {
-    position: relative;
-    display: none;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: -150px;
-    height:150px;
-    width: 150px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-  }
+.hoverwrap {
+  position: relative;
+  max-width: 500px; /* OPTIONAL */
+}
+/* (B) RESPONSIVE IMAGE */
+.hoverwrap img { width: 100%; }
+
+/* (C) CAPTION */
+.text {
+  /* (C1) DIMENSIONS */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  /* (C2) BOTTOM */
+  position: absolute;
+  bottom: 0;
+  /* (C3) COLORS */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* (D) SHOW/HIDE */
+.text {
+  visibility: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.hoverwrap:hover .text {
+  visibility: visible;
+  opacity: 1;
+}
+.table {
+  max-width:70%;
+  margin-bottom: 20px;
+}
+.card-body{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 400px ) {
+  .nav{
   
-  .card-img:hover .overlay {
-    opacity: 0.7;
+  }
+  #recipe-list{
+    width: 360px;
+  }
+  .card-body{
     display: block;
-    cursor: pointer;
+  }
+  #title{
+    margin-left:0;
+    word-wrap:break-word;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .shareButton {
+    margin-top: 20px;
+  }
+  .nav a {
+    text-align: center;
+    float: none;
   }
   
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
+  
+}
+@media only screen and (max-width: 790px ) {
+  .nav{
+    width: 100%;
+    height: auto;
+    position: relative;
   }
+  #title{
+    margin-left:0;
+    word-wrap:break-word;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .shareButton { 
+    margin-top: 20px;
+  }
+  .nav a {float: left;}
+  div.content {margin-left: 0;}
+
+}
