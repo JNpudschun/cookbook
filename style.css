@@ -2,6 +2,12 @@ body{
   background-image: url("./media/bkgrd.jpg");
   overflow-y: scroll;
 }
+#recipe-list {
+  background: transparent;
+}
+.list-group-item {
+  background: transparent;
+}
 .recipe{
     display:flex;
     justify-content: center;
@@ -15,10 +21,10 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    flex-shrink: 2;
+    
 }
 .card-text {
-  width: 900px;
+  
   text-align: center;
 }
 .navbar  {
@@ -69,9 +75,9 @@ body{
   visibility: visible;
   opacity: 1;
 }
-.table {
-  max-width:90%;
-  margin-bottom: 20px;
+.table-responsive {
+  max-width: 90%;
+   margin-bottom: 20px;
 }
 .card-body{
   display:flex;
@@ -79,54 +85,3 @@ body{
   justify-content: center;
   align-items: center;
 }
-#recipe-list{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-@media only screen and (max-width: 370px ) {
-  .card-img{
-    max-width:200px;
-  }
-  .card-text{
-    max-width: 200px;
-  }
-  .card{
-    width:200px;
-  }
-}
-  @media only screen and (max-width: 992px ) and (min-width:770px) {
-    .card-img{
-      width:700px;
-    }
-    .card-text{
-      width: 700px;
-    }
-    .card{
-      width:700px;
-    }
-  }
-  @media only screen and (max-width: 770px ) and (min-width:570px) {
-    .card-img{
-      width:500px;
-    }
-    .card-text{
-      width: 500px;
-    }
-    .card{
-      width:500px;
-    }
-  }
-  @media only screen and (max-width: 570px ) and (min-width:370px) {
-    .card-img{
-      width:300px;
-    }
-    .card-text{
-      width: 300px;
-    }
-    .card{
-      width:300px;
-    }
-  }
