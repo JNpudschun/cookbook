@@ -1,3 +1,7 @@
+body{
+  background-image: url("./media/bkgrd.jpg");
+  overflow-y: scroll;
+}
 .recipe{
     display:flex;
     justify-content: center;
@@ -12,6 +16,9 @@
     align-items: center;
     margin-bottom: 10px;
 }
+.card-text {
+  width: 900px;
+}
 .navbar  {
  
   display:flex;
@@ -23,6 +30,7 @@
 }
 .navbar-brand{
   align-self: flex-start;
+  margin-left: 30px;
 }
 
 #title{
@@ -60,7 +68,7 @@
   opacity: 1;
 }
 .table {
-  max-width:70%;
+  max-width:90%;
   margin-bottom: 20px;
 }
 .card-body{
