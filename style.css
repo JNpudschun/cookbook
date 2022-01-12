@@ -12,18 +12,19 @@
     align-items: center;
     margin-bottom: 10px;
 }
-.nav{
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: rgb(157, 190, 223);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 200px;
-    
+.navbar  {
+ 
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+  
 }
+.navbar-brand{
+  align-self: flex-start;
+}
+
 #title{
     margin-left: 200px;
 }
@@ -68,10 +69,8 @@
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 400px ) {
-  .nav{
-  
-  }
+/* @media only screen and (max-width: 400px ) {
+
   #recipe-list{
     width: 360px;
   }
@@ -87,18 +86,21 @@
   .shareButton {
     margin-top: 20px;
   }
-  .nav a {
-    text-align: center;
-    float: none;
-  }
   
   
+  
+} */
+#recipe-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
-@media only screen and (max-width: 790px ) {
-  .nav{
-    width: 100%;
-    height: auto;
-    position: relative;
+@media only screen and (max-width: 576px ) {
+  .navbar{
+    flex-direction: column;
+    width: auto;
   }
   #title{
     margin-left:0;
@@ -109,7 +111,7 @@
   .shareButton { 
     margin-top: 20px;
   }
-  .nav a {float: left;}
-  div.content {margin-left: 0;}
-
-}
+  #recipelist{
+    align-items: flex-end;
+  }
+ 
